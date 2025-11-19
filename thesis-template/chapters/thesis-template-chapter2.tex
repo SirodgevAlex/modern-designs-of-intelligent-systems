@@ -1,0 +1,291 @@
+\chapter{МОДЕЛИРОВАНИЕ ПРОБЛЕМНОЙ ОБЛАСТИ "ДИАГНОСТИКА ЗАБОЛЕВАНИЙ ДЫНЬ ПО ВИЗУАЛЬНЫМ ПРИЗНАКАМ, ВЫРАЩИВАЕМЫХ В УСЛОВИЯХ НЕСТАБИЛЬНОГО СОДЕРЖАНИЯ ПИТАТЕЛЬНЫХ ВЕЩЕСТВ В ПОЧВЕ"}
+
+\section{ПОСТРОЕНИЕ ФРАГМЕНТА ПОЛЯ ЗНАНИЙ ДЛЯ ДАННОЙ ПРОБЛЕМНОЙ ОБЛАСТИ НА ЕЯ}
+
+В данном разделе приводятся фрагмент полуформализованного описания проблемной области (фрагменты поля знаний) в виде совокупности конструкций вида: "ЕСЛИ" \textrightarrow{} "ТО" на естественном языке, полученное в результате исследования данной проблемной области.
+
+\begin{enumerate}
+    \item Если на листьях появились желтовато-зеленые пятна угловатой формы за последние 2 дня и наблюдается серовато-фиолетовый налет на нижней стороне листьев за последние 2 дня, то диагностировать \textquotedblleft{}пероноспороз (ложная мучнистая роса)\textquotedblright{}
+    \item Если на листьях и стеблях наблюдается белый мучнистый налет за последние 3 дня и листья закручиваются и становятся бурыми за последние 2 дня, то диагностировать \textquotedblleft{}мучнистая роса\textquotedblright{}
+    \item Если на листьях появились желтые и коричневые пятна с темно-бурой каемкой за последние 2 дня и на стеблях образовались вдавленные овальные язвочки за последние 2 дня, то диагностировать \textquotedblleft{}антракноз\textquotedblright{}
+    \item Если растение увядает за последний день и листья желтеют от основания к верхушке за последние 2 дня и корневая шейка темнеет за последние 3 дня, то диагностировать \textquotedblleft{}фузариозное увядание\textquotedblright{}
+    \item Если нижние листья становятся бледно-зелеными за последние 3 дня и содержание азота \textquotedblleft{}критическое\textquotedblright{} за последние 2 дня и рост замедляется за последние 4 дня, то диагностировать \textquotedblleft{}азотное голодание\textquotedblright{}
+    \item Если листья приобретают темно-зеленую окраску с фиолетовым оттенком за последние 3 дня и содержание фосфора \textquotedblleft{}критическое\textquotedblright{} за последние 2 дня, то диагностировать \textquotedblleft{}фосфорное голодание\textquotedblright{}
+    \item Если края листьев буреют и появляется краевой ожог за последние 2 дня и содержание калия \textquotedblleft{}критическое\textquotedblright{} за последние 2 дня, то диагностировать \textquotedblleft{}калийное голодание\textquotedblright{}
+    \item Если между жилками старых листьев развивается хлороз за последние 2 дня и содержание магния \textquotedblleft{}неоптимальное\textquotedblright{} за последние 3 дня, то диагностировать \textquotedblleft{}дефицит магния\textquotedblright{}
+    \item Если между жилками молодых листьев развивается хлороз за последние 2 дня и содержание железа \textquotedblleft{}критическое\textquotedblright{} за последний день, то диагностировать \textquotedblleft{}дефицит железа\textquotedblright{}
+    \item Если содержание азота \textquotedblleft{}критическое\textquotedblright{} за последние 2 дня и влажность почвы \textquotedblleft{}выше нормы\textquotedblright{} за последние 3 дня, то состояние питания \textquotedblleft{}критическое с риском вымывания\textquotedblright{}
+    \item Если содержание азота \textquotedblleft{}неоптимальное\textquotedblright{} за последние 3 дня и содержание калия \textquotedblleft{}неоптимальное\textquotedblright{} за последние 3 дня и содержание фосфора \textquotedblleft{}неоптимальное\textquotedblright{} за последние 3 дня, то состояние питания \textquotedblleft{}нестабильное\textquotedblright{}
+    \item Если содержание азота \textquotedblleft{}оптимальное\textquotedblright{} за последние 4 дня и содержание калия \textquotedblleft{}оптимальное\textquotedblright{} за последние 4 дня и содержание фосфора \textquotedblleft{}оптимальное\textquotedblright{} за последние 4 дня, то состояние питания \textquotedblleft{}стабильное\textquotedblright{}
+    \item Если диагностирована \textquotedblleft{}мучнистая роса\textquotedblright{} и влажность воздуха \textquotedblleft{}высокая\textquotedblright{} за последние 3 дня и температура воздуха \textquotedblleft{}умеренная (16-20\textdegree{}C)\textquotedblright{} за последние 3 дня, то выдать рекомендацию \textquotedblleft{}обработать посадки коллоидной серой, соблюдать севооборот\textquotedblright{}
+    \item Если диагностирован \textquotedblleft{}пероноспороз\textquotedblright{} и влажность почвы \textquotedblleft{}выше нормы\textquotedblright{} за последние 2 дня, то выдать рекомендацию \textquotedblleft{}обработать бордоской жидкостью, прогреть семена при 45\textdegree{}C в течение 2 часов\textquotedblright{}
+    \item Если диагностирован \textquotedblleft{}антракноз\textquotedblright{} и температура воздуха \textquotedblleft{}высокая (24-25\textdegree{}C)\textquotedblright{} за последние 3 дня и влажность воздуха \textquotedblleft{}выше 60\%\textquotedblright{} за последние 3 дня, то выдать рекомендацию \textquotedblleft{}удалить пораженные части растений, обработать фунгицидами\textquotedblright{}
+    \item Если диагностирован \textquotedblleft{}фузариозное увядание\textquotedblright{}, то выдать рекомендацию \textquotedblleft{}удалить пораженные растения, продезинфицировать почву, соблюдать севооборот минимум 4 года\textquotedblright{}
+    \item Если диагностировано \textquotedblleft{}азотное голодание\textquotedblright{} и состояние питания \textquotedblleft{}нестабильное\textquotedblright{} за последние 2 дня, то выдать рекомендацию \textquotedblleft{}внести азотные удобрения (мочевина, аммиачная селитра), провести листовую подкормку 2\% раствором нитрата кальция\textquotedblright{}
+    \item Если диагностировано \textquotedblleft{}калийное голодание\textquotedblright{} и содержание калия \textquotedblleft{}критическое\textquotedblright{} за последние 2 дня, то выдать рекомендацию \textquotedblleft{}внести калийные удобрения, избегать избыточного азотного питания\textquotedblright{}
+    \item Если диагностирован \textquotedblleft{}дефицит магния\textquotedblright{}, то выдать рекомендацию \textquotedblleft{}провести внекорневую подкормку сульфатом магния\textquotedblright{}
+    \item Если диагностирован \textquotedblleft{}дефицит железа\textquotedblright{} и pH почвы \textquotedblleft{}выше 7.5\textquotedblright{} за последние 3 дня, то выдать рекомендацию \textquotedblleft{}провести внекорневую подкормку хелатом железа, снизить pH почвы\textquotedblright{}
+\end{enumerate}
+
+\subsection{ПРАВИЛА НА ЯПЗ СИСТЕМЫ G2}
+
+\begin{enumerate}
+    \item when the value of leaf\_spots\_state as of 1 seconds ago = \textquotedblleft{}yellow-green-angular\textquotedblright{} and the rate of change per second of leaf\_spots\_state during the last 2 seconds = 0 and the value of leaf\_underside\_coating as of 1 seconds ago = \textquotedblleft{}gray-violet\textquotedblright{} and the rate of change per second of leaf\_underside\_coating during the last 2 seconds = 0 then conclude that the disease\_diagnosis of every melon\_plant = \textquotedblleft{}peronosporosis\textquotedblright{}
+    \item when the value of leaf\_stem\_coating as of 1 seconds ago = \textquotedblleft{}white-powdery\textquotedblright{} and the rate of change per second of leaf\_stem\_coating during the last 3 seconds = 0 and the value of leaf\_curl\_state as of 1 seconds ago = \textquotedblleft{}curled-brown\textquotedblright{} and the rate of change per second of leaf\_curl\_state during the last 2 seconds = 0 then conclude that the disease\_diagnosis of every melon\_plant = \textquotedblleft{}powdery\_mildew\textquotedblright{}
+    \item when the value of leaf\_spots\_state as of 1 seconds ago = \textquotedblleft{}yellow-brown-bordered\textquotedblright{} and the rate of change per second of leaf\_spots\_state during the last 2 seconds = 0 and the value of stem\_lesions as of 1 seconds ago = \textquotedblleft{}depressed-oval-yellow-brown\textquotedblright{} and the rate of change per second of stem\_lesions during the last 2 seconds = 0 then conclude that the disease\_diagnosis of every melon\_plant = \textquotedblleft{}anthracnose\textquotedblright{}
+    \item when the value of plant\_wilting as of 1 seconds ago = \textquotedblleft{}wilted\textquotedblright{} and the rate of change per second of plant\_wilting during the last 1 second = 0 and the value of leaf\_yellowing\_pattern as of 1 seconds ago = \textquotedblleft{}base-to-top\textquotedblright{} and the rate of change per second of leaf\_yellowing\_pattern during the last 2 seconds = 0 and the value of root\_collar\_state as of 1 seconds ago = \textquotedblleft{}darkened\textquotedblright{} and the rate of change per second of root\_collar\_state during the last 3 seconds = 0 then conclude that the disease\_diagnosis of every melon\_plant = \textquotedblleft{}fusarium\_wilt\textquotedblright{}
+    \item when the value of lower\_leaves\_color as of 1 seconds ago = \textquotedblleft{}pale-green\textquotedblright{} and the rate of change per second of lower\_leaves\_color during the last 3 seconds = 0 and the value of soil\_nitrogen\_state as of 1 seconds ago = 0 and the rate of change per second of soil\_nitrogen\_state during the last 2 seconds = 0 and the value of growth\_rate as of 1 seconds ago = \textquotedblleft{}slowed\textquotedblright{} and the rate of change per second of growth\_rate during the last 4 seconds = 0 then conclude that the deficiency\_diagnosis of every melon\_plant = \textquotedblleft{}nitrogen\_deficiency\textquotedblright{}
+    \item when the value of leaf\_color\_tone as of 1 seconds ago = \textquotedblleft{}dark-green-purple\textquotedblright{} and the rate of change per second of leaf\_color\_tone during the last 3 seconds = 0 and the value of soil\_phosphorus\_state as of 1 seconds ago = 0 and the rate of change per second of soil\_phosphorus\_state during the last 2 seconds = 0 then conclude that the deficiency\_diagnosis of every melon\_plant = \textquotedblleft{}phosphorus\_deficiency\textquotedblright{}
+    \item when the value of leaf\_edge\_state as of 1 seconds ago = \textquotedblleft{}brown-burned\textquotedblright{} and the rate of change per second of leaf\_edge\_state during the last 2 seconds = 0 and the value of soil\_potassium\_state as of 1 seconds ago = 0 and the rate of change per second of soil\_potassium\_state during the last 2 seconds = 0 then conclude that the deficiency\_diagnosis of every melon\_plant = \textquotedblleft{}potassium\_deficiency\textquotedblright{}
+    \item when the value of old\_leaf\_interveinal\_chlorosis as of 1 seconds ago = \textquotedblleft{}present\textquotedblright{} and the rate of change per second of old\_leaf\_interveinal\_chlorosis during the last 2 seconds = 0 and the value of soil\_magnesium\_state as of 1 seconds ago = 1 and the rate of change per second of soil\_magnesium\_state during the last 3 seconds = 0 then conclude that the deficiency\_diagnosis of every melon\_plant = \textquotedblleft{}magnesium\_deficiency\textquotedblright{}
+    \item when the value of young\_leaf\_interveinal\_chlorosis as of 1 seconds ago = \textquotedblleft{}present\textquotedblright{} and the rate of change per second of young\_leaf\_interveinal\_chlorosis during the last 2 seconds = 0 and the value of soil\_iron\_state as of 1 seconds ago = 0 and the rate of change per second of soil\_iron\_state during the last 1 second = 0 then conclude that the deficiency\_diagnosis of every melon\_plant = \textquotedblleft{}iron\_deficiency\textquotedblright{}
+    \item when the value of soil\_nitrogen\_state as of 1 seconds ago = 0 and the rate of change per second of soil\_nitrogen\_state during the last 2 seconds = 0 and the value of soil\_humidity\_state as of 1 seconds ago = 1 and the rate of change per second of soil\_humidity\_state during the last 3 seconds = 0 then conclude that the nutrition\_state of every melon\_field = \textquotedblleft{}critical\_with\_leaching\_risk\textquotedblright{}
+    \item when the value of soil\_nitrogen\_state as of 1 seconds ago = 1 and the rate of change per second of soil\_nitrogen\_state during the last 3 seconds = 0 and the value of soil\_potassium\_state as of 1 seconds ago = 1 and the rate of change per second of soil\_potassium\_state during the last 3 seconds = 0 and the value of soil\_phosphorus\_state as of 1 seconds ago = 1 and the rate of change per second of soil\_phosphorus\_state during the last 3 seconds = 0 then conclude that the nutrition\_state of every melon\_field = \textquotedblleft{}unstable\textquotedblright{}
+    \item when the value of soil\_nitrogen\_state as of 1 seconds ago = 2 and the rate of change per second of soil\_nitrogen\_state during the last 4 seconds = 0 and the value of soil\_potassium\_state as of 1 seconds ago = 2 and the rate of change per second of soil\_potassium\_state during the last 4 seconds = 0 and the value of soil\_phosphorus\_state as of 1 seconds ago = 2 and the rate of change per second of soil\_phosphorus\_state during the last 4 seconds = 0 then conclude that the nutrition\_state of every melon\_field = \textquotedblleft{}stable\textquotedblright{}
+    \item when the disease\_diagnosis of every melon\_plant = \textquotedblleft{}powdery\_mildew\textquotedblright{} and the value of air\_humidity\_state as of 1 seconds ago = \textquotedblleft{}high\textquotedblright{} and the rate of change per second of air\_humidity\_state during the last 3 seconds = 0 and the value of air\_temperature\_state as of 1 seconds ago = \textquotedblleft{}moderate\_16\_20\textquotedblright{} and the rate of change per second of air\_temperature\_state during the last 3 seconds = 0 then conclude that the recommendation of display\_object = \textquotedblleft{}обработать посадки коллоидной серой, соблюдать севооборот\textquotedblright{}
+    \item when the disease\_diagnosis of every melon\_plant = \textquotedblleft{}peronosporosis\textquotedblright{} and the value of soil\_humidity\_state as of 1 seconds ago = 1 and the rate of change per second of soil\_humidity\_state during the last 2 seconds = 0 then conclude that the recommendation of display\_object = \textquotedblleft{}обработать бордоской жидкостью, прогреть семена при 45\textdegree{}C в течение 2 часов\textquotedblright{}
+    \item when the disease\_diagnosis of every melon\_plant = \textquotedblleft{}anthracnose\textquotedblright{} and the value of air\_temperature\_state as of 1 seconds ago = \textquotedblleft{}high\_24\_25\textquotedblright{} and the rate of change per second of air\_temperature\_state during the last 3 seconds = 0 and the value of air\_humidity\_state as of 1 seconds ago = \textquotedblleft{}above\_60\%\textquotedblright{} and the rate of change per second of air\_humidity\_state during the last 3 seconds = 0 then conclude that the recommendation of display\_object = \textquotedblleft{}удалить пораженные части растений, обработать фунгицидами\textquotedblright{}
+    \item when the disease\_diagnosis of every melon\_plant = \textquotedblleft{}fusarium\_wilt\textquotedblright{} then conclude that the recommendation of display\_object = \textquotedblleft{}удалить пораженные растения, продезинфицировать почву, соблюдать севооборот минимум 4 года\textquotedblright{}
+    \item when the deficiency\_diagnosis of every melon\_plant = \textquotedblleft{}nitrogen\_deficiency\textquotedblright{} and the value of nutrition\_state as of 1 seconds ago = \textquotedblleft{}unstable\textquotedblright{} and the rate of change per second of nutrition\_state during the last 2 seconds = 0 then conclude that the recommendation of display\_object = \textquotedblleft{}внести азотные удобрения (мочевина, аммиачная селитра), провести листовую подкормку 2\% раствором нитрата кальция\textquotedblright{}
+    \item when the deficiency\_diagnosis of every melon\_plant = \textquotedblleft{}potassium\_deficiency\textquotedblright{} and the value of soil\_potassium\_state as of 1 seconds ago = 0 and the rate of change per second of soil\_potassium\_state during the last 2 seconds = 0 then conclude that the recommendation of display\_object = \textquotedblleft{}внести калийные удобрения, избегать избыточного азотного питания\textquotedblright{}
+    \item when the deficiency\_diagnosis of every melon\_plant = \textquotedblleft{}magnesium\_deficiency\textquotedblright{}, then conclude that the recommendation of display\_object = \textquotedblleft{}провести внекорневую подкормку сульфатом магния\textquotedblright{}
+    \item when the deficiency\_diagnosis of every melon\_plant = \textquotedblleft{}iron\_deficiency\textquotedblright{} and the value of soil\_pH\_state as of 1 seconds ago = \textquotedblleft{}above\_7\_5\textquotedblright{} and the rate of change per second of soil\_pH\_state during the last 3 seconds = 0 then conclude that the recommendation of display\_object = \textquotedblleft{}провести внекорневую подкормку хелатом железа, снизить pH почвы\textquotedblright{}
+\end{enumerate}
+
+\section{ПОСТРОЕНИЕ ИМИТАЦИОННОЙ МОДЕЛИ, ИСПОЛЬЗУЕМОЙ В ПРОТОТИПЕ ИЭС}
+
+Система G2 не имеет встроенной подсистемы имитационного моделирования, поэтому имитационная модель и средства её отладки реализуются базовыми средствами системы G2, а именно правилами и процедурами G2.
+
+Для реализации прототипа была построена имитационная модель (ИМ), состав которой представлен ниже.
+
+\subsection*{СОСТАВ ИМИТАЦИОННОЙ МОДЕЛИ:}
+
+% Пример плейсхолдера для диаграммы. Замените на actual image path
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.9\linewidth]{img/im_structure.png}
+%     \caption{Структура имитационной модели}
+%     \label{fig:im_structure}
+% \end{figure}
+
+% Вставить диаграмму ИМ
+```
+┌─────────────────────────────────────────────────────┐
+│         ИМИТАЦИОННАЯ МОДЕЛЬ (ИМ)                    │
+│                                                     │
+│  ┌──────────────────────┐    ┌──────────────────┐   │
+│  │  Модель объекта      │    │  Модель          │   │
+│  │  управления (МОУ)    │◄───┤  регулятора (МР) │   │
+│  │                      │    │                  │   │
+│  │ - Состояние поля     │    │ - Расчет NPK     │   │
+│  │ - Состояние воздуха  │    │ - Расчет влажн.  │   │
+│  │ - Состояние почвы    │    │ - Расчет темп.   │   │
+│  │ - Визуальные признаки│    │ - Расчет pH      │   │
+│  └──────────────────────┘    └──────────────────┘   │
+│           ▲                           ▲             │
+│           │                           │             │
+│           │    ┌─────────────────────┐│             │
+│           └────┤ Модель случайных    ││             │
+│                │ возмущений (МСВ)    ││             │
+│                │                     ││             │
+│                │ - Осадки            ││             │
+│                │ - Загрязнения       ││             │
+│                │ - Температурные     ││             │
+│                │   колебания         ││             │
+│                └─────────────────────┘│             │
+└─────────────────────────────────────────────────────┘
+```
+
+В качестве метода имитационного моделирования выбран подход СКАНИРОВАНИЯ АКТИВНОСТЕЙ. Для этого выделяются состояния системы и описываются действия, которые переводят ее из одного состояния в другое. Условия начала или окончания действия проверяются после очередного продвижения имитационного времени. Если заданные условия удовлетворяются, происходит соответствующее действие. Для того чтобы было выполнено каждое действие в модели, сканирование условий производится для всего множества действий при каждом продвижении имитационного времени. Время изменения состояния поля составляет постоянную величину, которая сопоставляется с интервалом сканирования активности.
+
+\subsection*{ПАРАМЕТРЫ МОДЕЛИ:}
+
+Вектор $Z(T)$ - множество выходных параметров модели объекта управления, которые затем поступают на вход в экспертную систему.
+
+Вектор $E(T)$ - указывает на множество возмущений.
+
+Вектор $U(T)$ - множество контролируемых управляемых входов, которые поступают в модель объекта управления от модели регулятора.
+
+Вектор $Y(T)$ - множество выходных параметров объекта управления, использующихся в модели регулятора.
+
+Вектор $X(T)$ - множество контролируемых неуправляемых входов, которые поступают в модель объекта управления.
+
+\subsection{КОНКРЕТИЗАЦИЯ ТЕОРЕТИКО-МНОЖЕСТВЕННОГО ПРЕДСТАВЛЕНИЯ}
+
+Имитационная модель $M_{\text{им}} = \langle \text{МОУ, МР, МСВ, } V_x, V_u, V_y, V_e, V_z, S, F_{xeu \rightarrow yz}, F_{y \rightarrow u} \rangle$
+
+МОУ = $\langle A1, A2, A3 \rangle$ - модель объекта управления, где
+
+$A1$ – состояние воздуха:
+\begin{itemize}
+    \item Влажность воздуха $[0, 100]\%$
+    \item Температура воздуха $[-30, 60]\textdegree{}C$
+\end{itemize}
+
+$A2$ – состояние почвы:
+\begin{itemize}
+    \item Концентрация азота (N) $[0, 100]\%$
+    \item Концентрация фосфора (P) $[0, 100]\%$
+    \item Концентрация калия (K) $[0, 100]\%$
+    \item Концентрация магния (Mg) $[0, 100]$ мг/кг
+    \item Концентрация железа (Fe) $[0, 100]$ мг/кг
+    \item Влажность почвы $[0, 100]\%$
+    \item Уровень pH почвы $[4.0, 8.5]$
+\end{itemize}
+
+$A3$ – визуальные признаки растений дыни:
+\begin{itemize}
+    \item Состояние листьев \{нормальное, пятна, хлороз, некроз, увядание\}
+    \item Окраска листьев \{зеленая, светло-зеленая, темно-зеленая, желтая, фиолетовая\}
+    \item Состояние стеблей \{нормальное, язвы, потемнение, увядание\}
+    \item Состояние корневой шейки \{нормальное, потемнение, гниение\}
+\end{itemize}
+
+МР = $\langle B1, B2, B3, B4, B5, B6 \rangle$ - модель регулятора, где
+\begin{itemize}
+    \item $B1$ – calculateHumidityValues() - расчёт показателей влажности воздуха и почвы
+    \item $B2$ – calculateTemperatureValue() – расчёт температуры воздуха
+    \item $B3$ – calculatePHValue() – расчёт pH почвы
+    \item $B4$ – calculateNitrogenConcentration() - расчёт концентрации азота
+    \item $B5$ – calculatePhosphorusPotassiumConcentration() - расчёт концентраций фосфора и калия
+    \item $B6$ – calculateMicroelementConcentration() - расчёт концентраций микроэлементов (Mg, Fe)
+\end{itemize}
+
+МСВ = $\{C1, C2\}$ – модель случайных возмущений, генератор случайных чисел:
+\begin{itemize}
+    \item $C1$ - randomPrecipitationAmount() – количество осадков
+    \item $C2$ - randomPollutionAmount() – объем загрязняющих выбросов
+\end{itemize}
+
+$V_e = \{V_{e1}, V_{e2}, V_{e3}, V_{e4}\}$ – множество случайных возмущений:
+\begin{itemize}
+    \item Изменение концентрации азота $[0, 100]\%$
+    \item Изменение концентрации фосфора $[0, 100]\%$
+    \item Изменение концентрации калия $[0, 100]\%$
+    \item Количество загрязняющих веществ $[0, 10000]$ л/сут
+\end{itemize}
+
+$V_u = \{V_{u1}, V_{u2}, V_{u3}, V_{u4}, V_{u5}, V_{u6}, V_{u7}\}$ – множество контролируемых управляемых входов:
+\begin{itemize}
+    \item Изменение температуры воздуха $[-50, 50]\textdegree{}C$
+    \item Изменение влажности воздуха $[-100, 100]\%$
+    \item Изменение влажности почвы $[-10, 10]\%$
+    \item Изменение количества удобрений азота $[-50, 50]\%$
+    \item Изменение количества удобрений фосфора $[-50, 50]\%$
+    \item Изменение количества удобрений калия $[-50, 50]\%$
+    \item Изменение уровня pH почвы $[-2, 2]$
+\end{itemize}
+
+$V_z = \{V_{z1}, V_{z2}, V_{z3}, V_{z4}, V_{z5}, V_{z6}, V_{z7}, V_{z8}\}$ – множество выходных параметров:
+\begin{itemize}
+    \item Состояние температуры воздуха \{холодная, умеренная, высокая\}
+    \item Состояние влажности воздуха \{низкая, оптимальная, высокая, критическая\}
+    \item Состояние влажности почвы \{ниже\_нормы, норма, выше\_нормы\}
+    \item Состояние количества азота \{критическое, неоптимальное, оптимальное\}
+    \item Состояние количества фосфора \{критическое, неоптимальное, оптимальное\}
+    \item Состояние количества калия \{критическое, неоптимальное, оптимальное\}
+    \item Состояние уровня pH почвы \{кислая, нейтральная, щелочная\}
+    \item Диагноз заболевания \{норма, мучнистая\_роса, пероноспороз, антракноз, фузариоз, дефицит\_элемента\}
+\end{itemize}
+
+$V_y = \{V_{y1}, V_{y2}, V_{y3}, V_{y4}, V_{y5}, V_{y6}\}$ – множество выходных параметров системы:
+\begin{itemize}
+    \item Изменение среднесуточной температуры $[-10, 10]\textdegree{}C$
+    \item Уровень осадков $[0, 5]$ мм
+    \item Изменение концентрации азота $[0, 100]\%$
+    \item Изменение концентрации фосфора $[0, 100]\%$
+    \item Изменение концентрации калия $[0, 100]\%$
+    \item Количество загрязняющих выбросов $[0, 10000]$ л/сут
+\end{itemize}
+
+$F_{y \rightarrow u}$ - функция отображения входа регулятора в его выход:
+\begin{itemize}
+    \item Изменение температуры воздуха = Изменение среднесуточной температуры
+    \item Изменение влажности воздуха = $(Уровень~осадков - 2.5)^3 \times 2^8 / 10$
+    \item Изменение влажности почвы = $(Уровень~осадков - 2.5)^5 / 10$
+\end{itemize}
+
+$F_{xeu \rightarrow yz}$ – функция отображения входа объекта управления в его выход. Функция отвечает за отображение параметров входа ОУ (векторов X, V, U) в его выходы:
+\begin{itemize}
+    \item Температура воздуха $(t+1)$ = температура воздуха $(t)$ + Изменение температуры воздуха $/ 2$
+    \item Влажность воздуха $(t+1)$ = влажность воздуха $(t)$ + Изменение влажности воздуха $/ 4$
+    \item Влажность почвы $(t+1)$ = влажность почвы $(t)$ + Изменение влажности почвы $/ 10$
+    \item Количество азота $(t+1)$ = количество азота $(t)$ + Изменение концентрации азота
+    \item Количество фосфора $(t+1)$ = количество фосфора $(t)$ + Изменение концентрации фосфора
+    \item Количество калия $(t+1)$ = количество калия $(t)$ + Изменение концентрации калия
+    \item Уровень pH почвы $(t+1)$ = уровень pH почвы $(t)$ + Количество загрязняющих выбросов $/ 1000$
+\end{itemize}
+
+Преобразование численных переменных в символьные для последующей передачи в систему, основанную на знаниях, отражено в таблице ниже.
+
+\subsection*{ДИАПАЗОНЫ ДЛЯ ПЕРЕВОДА ЧИСЛЕННЫХ ПЕРЕМЕННЫХ В СИМВОЛЬНЫЕ:}
+
+\begin{tabular}{|l|c|c|c|}
+\hline
+Параметр & Критическое/Низкое & Неоптимальное/Среднее & Оптимальное/Высокое \\
+\hline
+Температура воздуха (\textdegree{}C) & $<$ 10 или $>$ 35 & 10-16, 26-35 & 16-26 \\
+\hline
+Влажность воздуха (\%) & $<$ 40 или $>$ 80 & 40-50, 70-80 & 50-70 \\
+\hline
+Влажность почвы (\%) & $<$ 60 или $>$ 90 & 60-70, 85-90 & 70-85 \\
+\hline
+Содержание азота (\%) | $<$ 1.5 & 1.5-2.5 & 2.5-4.0 \\
+\hline
+Содержание фосфора (\%) | $<$ 0.3 & 0.3-0.5 & 0.5-0.8 \\
+\hline
+Содержание калия (\%) | $<$ 1.0 & 1.0-1.5 & 1.5-2.5 \\
+\hline
+pH почвы | $<$ 6.0 или $>$ 7.5 & 6.0-6.2, 7.2-7.5 & 6.2-7.2 \\
+\hline
+\end{tabular}
+
+\subsection{КОНКРЕТИЗАЦИЯ ЭТАПОВ ИМИТАЦИОННОГО ЭКСПЕРИМЕНТА}
+
+Согласно методологии построения динамических интегрированных экспертных систем, существует 9 этапов имитационного эксперимента, среди которых:
+\begin{enumerate}
+    \item Формулировка проблемы и целей имитационного эксперимента
+    \item Определение релевантных ресурсов и законов функционирования моделируемой системы; формализация моделируемой системы
+    \item Программирование имитационной модели
+    \item Планирование имитационных экспериментов, определение начальных условий
+    \item Получение исходных данных
+    \item Проведение имитационных экспериментов
+    \item Обработка результатов экспериментов
+    \item Интерпретация полученных данных
+\end{enumerate}
+
+В рамках настоящей работы данные пункты приобретают следующий смысл:
+
+\subsection*{ЦЕЛЬЮ ИМИТАЦИОННОГО ЭКСПЕРИМЕНТА}
+
+является проверка действий прототипа динамической интегрированной экспертной системы в зависимости от различных условий, возникающих во внешней среде и влияющих на содержание питательных веществ в почве, с дальнейшей интерпретацией полученных результатов.
+
+\subsection*{ЗАКОНЫ ФУНКЦИОНИРОВАНИЯ}
+
+моделируемой системы есть суть правила и процедуры, представленные в разделе 2.1.
+
+В рамках данной работы было принято решение о необходимости проведения следующих ИМИТАЦИОННЫХ ЭКСПЕРИМЕНТОВ:
+\begin{itemize}
+    \item ЭКСПЕРИМЕНТ 1: Моделирование нестабильного содержания азота в почве при различных уровнях осадков и анализ развития визуальных признаков азотного голодания.
+    \item ЭКСПЕРИМЕНТ 2: Моделирование одновременного дефицита нескольких макроэлементов (NPK) и оценка комплексного влияния на состояние растений дынь.
+    \item ЭКСПЕРИМЕНТ 3: Моделирование благоприятных условий для развития грибковых заболеваний (мучнистая роса, пероноспороз, антракноз) при различных комбинациях температуры и влажности.
+    \item ЭКСПЕРИМЕНТ 4: Моделирование влияния внешних загрязнений на изменение pH почвы и последующее развитие дефицита микроэлементов (железа, магния).
+    \item ЭКСПЕРИМЕНТ 5: Моделирование вымывания питательных веществ при избыточных осадках и анализ динамики перехода от стабильного к критическому состоянию питания.
+\end{itemize}
+
+Каждый эксперимент предполагает:
+\begin{itemize}
+    \item Установку различных начальных значений параметров модели
+    \item Задание характера случайных возмущений (интенсивность осадков, температурные колебания, загрязнения)
+    \item Наблюдение за динамикой изменения состояния системы во времени
+    \item Фиксацию момента возникновения критических ситуаций и формирования диагнозов
+    \item Анализ корректности выдаваемых системой рекомендаций
+\end{itemize}
+
+Результаты имитационных экспериментов позволят:
+\begin{itemize}
+    \item Проверить адекватность построенной модели реальным процессам выращивания дынь
+    \item Оценить полноту базы знаний экспертной системы
+    \item Выявить критические комбинации параметров, требующие особого внимания
+    \item Сформировать рекомендации по профилактике заболеваний и поддержанию стабильного питания растений
+\end{itemize}
