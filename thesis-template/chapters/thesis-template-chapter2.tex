@@ -17,9 +17,9 @@
     \item Если содержание азота \textquotedblleft{}критическое\textquotedblright{} за последние 2 дня и влажность почвы \textquotedblleft{}выше нормы\textquotedblright{} за последние 3 дня, то состояние питания \textquotedblleft{}критическое с риском вымывания\textquotedblright{}
     \item Если содержание азота \textquotedblleft{}неоптимальное\textquotedblright{} за последние 3 дня и содержание калия \textquotedblleft{}неоптимальное\textquotedblright{} за последние 3 дня и содержание фосфора \textquotedblleft{}неоптимальное\textquotedblright{} за последние 3 дня, то состояние питания \textquotedblleft{}нестабильное\textquotedblright{}
     \item Если содержание азота \textquotedblleft{}оптимальное\textquotedblright{} за последние 4 дня и содержание калия \textquotedblleft{}оптимальное\textquotedblright{} за последние 4 дня и содержание фосфора \textquotedblleft{}оптимальное\textquotedblright{} за последние 4 дня, то состояние питания \textquotedblleft{}стабильное\textquotedblright{}
-    \item Если диагностирована \textquotedblleft{}мучнистая роса\textquotedblright{} и влажность воздуха \textquotedblleft{}высокая\textquotedblright{} за последние 3 дня и температура воздуха \textquotedblleft{}умеренная (16-20\textdegree{}C)\textquotedblright{} за последние 3 дня, то выдать рекомендацию \textquotedblleft{}обработать посадки коллоидной серой, соблюдать севооборот\textquotedblright{}
-    \item Если диагностирован \textquotedblleft{}пероноспороз\textquotedblright{} и влажность почвы \textquotedblleft{}выше нормы\textquotedblright{} за последние 2 дня, то выдать рекомендацию \textquotedblleft{}обработать бордоской жидкостью, прогреть семена при 45\textdegree{}C в течение 2 часов\textquotedblright{}
-    \item Если диагностирован \textquotedblleft{}антракноз\textquotedblright{} и температура воздуха \textquotedblleft{}высокая (24-25\textdegree{}C)\textquotedblright{} за последние 3 дня и влажность воздуха \textquotedblleft{}выше 60\%\textquotedblright{} за последние 3 дня, то выдать рекомендацию \textquotedblleft{}удалить пораженные части растений, обработать фунгицидами\textquotedblright{}
+    \item Если диагностирована \textquotedblleft{}мучнистая роса\textquotedblright{} и влажность воздуха \textquotedblleft{}высокая\textquotedblright{} за последние 3 дня и температура воздуха \textquotedblleft{}умеренная (\SIrange{16}{20}{\degree C})\textquotedblright{} за последние 3 дня, то выдать рекомендацию \textquotedblleft{}обработать посадки коллоидной серой, соблюдать севооборот\textquotedblright{}
+    \item Если диагностирован \textquotedblleft{}пероноспороз\textquotedblright{} и влажность почвы \textquotedblleft{}выше нормы\textquotedblright{} за последние 2 дня, то выдать рекомендацию \textquotedblleft{}обработать бордоской жидкостью, прогреть семена при \SI{45}{\degree C} в течение 2 часов\textquotedblright{}
+    \item Если диагностирован \textquotedblleft{}антракноз\textquotedblright{} и температура воздуха \textquotedblleft{}высокая (\SIrange{24}{25}{\degree C})\textquotedblright{} за последние 3 дня и влажность воздуха \textquotedblleft{}выше 60\%\textquotedblright{} за последние 3 дня, то выдать рекомендацию \textquotedblleft{}удалить пораженные части растений, обработать фунгицидами\textquotedblright{}
     \item Если диагностирован \textquotedblleft{}фузариозное увядание\textquotedblright{}, то выдать рекомендацию \textquotedblleft{}удалить пораженные растения, продезинфицировать почву, соблюдать севооборот минимум 4 года\textquotedblright{}
     \item Если диагностировано \textquotedblleft{}азотное голодание\textquotedblright{} и состояние питания \textquotedblleft{}нестабильное\textquotedblright{} за последние 2 дня, то выдать рекомендацию \textquotedblleft{}внести азотные удобрения (мочевина, аммиачная селитра), провести листовую подкормку 2\% раствором нитрата кальция\textquotedblright{}
     \item Если диагностировано \textquotedblleft{}калийное голодание\textquotedblright{} и содержание калия \textquotedblleft{}критическое\textquotedblright{} за последние 2 дня, то выдать рекомендацию \textquotedblleft{}внести калийные удобрения, избегать избыточного азотного питания\textquotedblright{}
@@ -43,7 +43,7 @@
     \item when the value of soil\_nitrogen\_state as of 1 seconds ago = 1 and the rate of change per second of soil\_nitrogen\_state during the last 3 seconds = 0 and the value of soil\_potassium\_state as of 1 seconds ago = 1 and the rate of change per second of soil\_potassium\_state during the last 3 seconds = 0 and the value of soil\_phosphorus\_state as of 1 seconds ago = 1 and the rate of change per second of soil\_phosphorus\_state during the last 3 seconds = 0 then conclude that the nutrition\_state of every melon\_field = \textquotedblleft{}unstable\textquotedblright{}
     \item when the value of soil\_nitrogen\_state as of 1 seconds ago = 2 and the rate of change per second of soil\_nitrogen\_state during the last 4 seconds = 0 and the value of soil\_potassium\_state as of 1 seconds ago = 2 and the rate of change per second of soil\_potassium\_state during the last 4 seconds = 0 and the value of soil\_phosphorus\_state as of 1 seconds ago = 2 and the rate of change per second of soil\_phosphorus\_state during the last 4 seconds = 0 then conclude that the nutrition\_state of every melon\_field = \textquotedblleft{}stable\textquotedblright{}
     \item when the disease\_diagnosis of every melon\_plant = \textquotedblleft{}powdery\_mildew\textquotedblright{} and the value of air\_humidity\_state as of 1 seconds ago = \textquotedblleft{}high\textquotedblright{} and the rate of change per second of air\_humidity\_state during the last 3 seconds = 0 and the value of air\_temperature\_state as of 1 seconds ago = \textquotedblleft{}moderate\_16\_20\textquotedblright{} and the rate of change per second of air\_temperature\_state during the last 3 seconds = 0 then conclude that the recommendation of display\_object = \textquotedblleft{}обработать посадки коллоидной серой, соблюдать севооборот\textquotedblright{}
-    \item when the disease\_diagnosis of every melon\_plant = \textquotedblleft{}peronosporosis\textquotedblright{} and the value of soil\_humidity\_state as of 1 seconds ago = 1 and the rate of change per second of soil\_humidity\_state during the last 2 seconds = 0 then conclude that the recommendation of display\_object = \textquotedblleft{}обработать бордоской жидкостью, прогреть семена при 45\textdegree{}C в течение 2 часов\textquotedblright{}
+    \item when the disease\_diagnosis of every melon\_plant = \textquotedblleft{}peronosporosis\textquotedblright{} and the value of soil\_humidity\_state as of 1 seconds ago = 1 and the rate of change per second of soil\_humidity\_state during the last 2 seconds = 0 then conclude that the recommendation of display\_object = \textquotedblleft{}обработать бордоской жидкостью, прогреть семена при \SI{45}{\degree C} в течение 2 часов\textquotedblright{}
     \item when the disease\_diagnosis of every melon\_plant = \textquotedblleft{}anthracnose\textquotedblright{} and the value of air\_temperature\_state as of 1 seconds ago = \textquotedblleft{}high\_24\_25\textquotedblright{} and the rate of change per second of air\_temperature\_state during the last 3 seconds = 0 and the value of air\_humidity\_state as of 1 seconds ago = \textquotedblleft{}above\_60\%\textquotedblright{} and the rate of change per second of air\_humidity\_state during the last 3 seconds = 0 then conclude that the recommendation of display\_object = \textquotedblleft{}удалить пораженные части растений, обработать фунгицидами\textquotedblright{}
     \item when the disease\_diagnosis of every melon\_plant = \textquotedblleft{}fusarium\_wilt\textquotedblright{} then conclude that the recommendation of display\_object = \textquotedblleft{}удалить пораженные растения, продезинфицировать почву, соблюдать севооборот минимум 4 года\textquotedblright{}
     \item when the deficiency\_diagnosis of every melon\_plant = \textquotedblleft{}nitrogen\_deficiency\textquotedblright{} and the value of nutrition\_state as of 1 seconds ago = \textquotedblleft{}unstable\textquotedblright{} and the rate of change per second of nutrition\_state during the last 2 seconds = 0 then conclude that the recommendation of display\_object = \textquotedblleft{}внести азотные удобрения (мочевина, аммиачная селитра), провести листовую подкормку 2\% раствором нитрата кальция\textquotedblright{}
@@ -69,32 +69,12 @@
 % \end{figure}
 
 % Вставить диаграмму ИМ
-```
-┌─────────────────────────────────────────────────────┐
-│         ИМИТАЦИОННАЯ МОДЕЛЬ (ИМ)                    │
-│                                                     │
-│  ┌──────────────────────┐    ┌──────────────────┐   │
-│  │  Модель объекта      │    │  Модель          │   │
-│  │  управления (МОУ)    │◄───┤  регулятора (МР) │   │
-│  │                      │    │                  │   │
-│  │ - Состояние поля     │    │ - Расчет NPK     │   │
-│  │ - Состояние воздуха  │    │ - Расчет влажн.  │   │
-│  │ - Состояние почвы    │    │ - Расчет темп.   │   │
-│  │ - Визуальные признаки│    │ - Расчет pH      │   │
-│  └──────────────────────┘    └──────────────────┘   │
-│           ▲                           ▲             │
-│           │                           │             │
-│           │    ┌─────────────────────┐│             │
-│           └────┤ Модель случайных    ││             │
-│                │ возмущений (МСВ)    ││             │
-│                │                     ││             │
-│                │ - Осадки            ││             │
-│                │ - Загрязнения       ││             │
-│                │ - Температурные     ││             │
-│                │   колебания         ││             │
-│                └─────────────────────┘│             │
-└─────────────────────────────────────────────────────┘
-```
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/im_model.png}
+    \caption{Имитационная модель.}
+    \label{fig:im_model}
+\end{figure}
 
 В качестве метода имитационного моделирования выбран подход СКАНИРОВАНИЯ АКТИВНОСТЕЙ. Для этого выделяются состояния системы и описываются действия, которые переводят ее из одного состояния в другое. Условия начала или окончания действия проверяются после очередного продвижения имитационного времени. Если заданные условия удовлетворяются, происходит соответствующее действие. Для того чтобы было выполнено каждое действие в модели, сканирование условий производится для всего множества действий при каждом продвижении имитационного времени. Время изменения состояния поля составляет постоянную величину, которая сопоставляется с интервалом сканирования активности.
 
@@ -112,17 +92,17 @@
 
 \subsection{КОНКРЕТИЗАЦИЯ ТЕОРЕТИКО-МНОЖЕСТВЕННОГО ПРЕДСТАВЛЕНИЯ}
 
-Имитационная модель $M_{\text{им}} = \langle \text{МОУ, МР, МСВ, } V_x, V_u, V_y, V_e, V_z, S, F_{xeu \rightarrow yz}, F_{y \rightarrow u} \rangle$
+Имитационная модель $M_{\text{им}} = \langle \text{МОУ}, \text{ МР}, \text{ МСВ, } V_x, V_u, V_y, V_e, V_z, S, F_{xeu \rightarrow yz}, F_{y \rightarrow u} \rangle$
 
-МОУ = $\langle A1, A2, A3 \rangle$ - модель объекта управления, где
+МОУ = $\langle A1, A2, A3 \rangle$ - \text{модель объекта управления, где}
 
-$A1$ – состояние воздуха:
+$A1$ – \text{состояние воздуха}:
 \begin{itemize}
     \item Влажность воздуха $[0, 100]\%$
-    \item Температура воздуха $[-30, 60]\textdegree{}C$
+    \item Температура воздуха $[\SI{-30}{\degree}, \SI{60}{\degree}]C$
 \end{itemize}
 
-$A2$ – состояние почвы:
+$A2$ – \text{состояние почвы}:
 \begin{itemize}
     \item Концентрация азота (N) $[0, 100]\%$
     \item Концентрация фосфора (P) $[0, 100]\%$
@@ -133,7 +113,7 @@ $A2$ – состояние почвы:
     \item Уровень pH почвы $[4.0, 8.5]$
 \end{itemize}
 
-$A3$ – визуальные признаки растений дыни:
+$A3$ – \text{визуальные признаки растений дыни}:
 \begin{itemize}
     \item Состояние листьев \{нормальное, пятна, хлороз, некроз, увядание\}
     \item Окраска листьев \{зеленая, светло-зеленая, темно-зеленая, желтая, фиолетовая\}
@@ -141,7 +121,7 @@ $A3$ – визуальные признаки растений дыни:
     \item Состояние корневой шейки \{нормальное, потемнение, гниение\}
 \end{itemize}
 
-МР = $\langle B1, B2, B3, B4, B5, B6 \rangle$ - модель регулятора, где
+МР = $\langle B1, B2, B3, B4, B5, B6 \rangle$ - \text{модель регулятора, где}
 \begin{itemize}
     \item $B1$ – calculateHumidityValues() - расчёт показателей влажности воздуха и почвы
     \item $B2$ – calculateTemperatureValue() – расчёт температуры воздуха
@@ -151,13 +131,13 @@ $A3$ – визуальные признаки растений дыни:
     \item $B6$ – calculateMicroelementConcentration() - расчёт концентраций микроэлементов (Mg, Fe)
 \end{itemize}
 
-МСВ = $\{C1, C2\}$ – модель случайных возмущений, генератор случайных чисел:
+МСВ = $\{C1, C2\}$ – \text{модель случайных возмущений, генератор случайных чисел}:
 \begin{itemize}
     \item $C1$ - randomPrecipitationAmount() – количество осадков
     \item $C2$ - randomPollutionAmount() – объем загрязняющих выбросов
 \end{itemize}
 
-$V_e = \{V_{e1}, V_{e2}, V_{e3}, V_{e4}\}$ – множество случайных возмущений:
+$V_e = \{V_{e1}, V_{e2}, V_{e3}, V_{e4}\}$ – \text{множество случайных возмущений}:
 \begin{itemize}
     \item Изменение концентрации азота $[0, 100]\%$
     \item Изменение концентрации фосфора $[0, 100]\%$
@@ -165,9 +145,9 @@ $V_e = \{V_{e1}, V_{e2}, V_{e3}, V_{e4}\}$ – множество случайн
     \item Количество загрязняющих веществ $[0, 10000]$ л/сут
 \end{itemize}
 
-$V_u = \{V_{u1}, V_{u2}, V_{u3}, V_{u4}, V_{u5}, V_{u6}, V_{u7}\}$ – множество контролируемых управляемых входов:
+$V_u = \{V_{u1}, V_{u2}, V_{u3}, V_{u4}, V_{u5}, V_{u6}, V_{u7}\}$ – \text{множество контролируемых управляемых входов}:
 \begin{itemize}
-    \item Изменение температуры воздуха $[-50, 50]\textdegree{}C$
+    \item Изменение температуры воздуха $[\SI{-50}{\degree}, \SI{50}{\degree}]C$
     \item Изменение влажности воздуха $[-100, 100]\%$
     \item Изменение влажности почвы $[-10, 10]\%$
     \item Изменение количества удобрений азота $[-50, 50]\%$
@@ -176,7 +156,7 @@ $V_u = \{V_{u1}, V_{u2}, V_{u3}, V_{u4}, V_{u5}, V_{u6}, V_{u7}\}$ – множ�
     \item Изменение уровня pH почвы $[-2, 2]$
 \end{itemize}
 
-$V_z = \{V_{z1}, V_{z2}, V_{z3}, V_{z4}, V_{z5}, V_{z6}, V_{z7}, V_{z8}\}$ – множество выходных параметров:
+$V_z = \{V_{z1}, V_{z2}, V_{z3}, V_{z4}, V_{z5}, V_{z6}, V_{z7}, V_{z8}\}$ – \text{множество выходных параметров}:
 \begin{itemize}
     \item Состояние температуры воздуха \{холодная, умеренная, высокая\}
     \item Состояние влажности воздуха \{низкая, оптимальная, высокая, критическая\}
@@ -188,31 +168,31 @@ $V_z = \{V_{z1}, V_{z2}, V_{z3}, V_{z4}, V_{z5}, V_{z6}, V_{z7}, V_{z8}\}$ – �
     \item Диагноз заболевания \{норма, мучнистая\_роса, пероноспороз, антракноз, фузариоз, дефицит\_элемента\}
 \end{itemize}
 
-$V_y = \{V_{y1}, V_{y2}, V_{y3}, V_{y4}, V_{y5}, V_{y6}\}$ – множество выходных параметров системы:
+$V_y = \{V_{y1}, V_{y2}, V_{y3}, V_{y4}, V_{y5}, V_{y6}\}$ – \text{множество выходных параметров системы}:
 \begin{itemize}
-    \item Изменение среднесуточной температуры $[-10, 10]\textdegree{}C$
-    \item Уровень осадков $[0, 5]$ мм
+    \item \text{Изменение среднесуточной температуры} $[\SI{-10}{\degree}, \SI{10}{\degree}]C$
+    \item \text{Уровень осадков} $[0, 5]$ мм
     \item Изменение концентрации азота $[0, 100]\%$
     \item Изменение концентрации фосфора $[0, 100]\%$
     \item Изменение концентрации калия $[0, 100]\%$
-    \item Количество загрязняющих выбросов $[0, 10000]$ л/сут
+    \item \text{Количество загрязняющих выбросов} $[0, 10000]$ л/сут
 \end{itemize}
 
-$F_{y \rightarrow u}$ - функция отображения входа регулятора в его выход:
+$F_{y \rightarrow u}$ - \text{функция отображения входа регулятора в его выход}:
 \begin{itemize}
     \item Изменение температуры воздуха = Изменение среднесуточной температуры
-    \item Изменение влажности воздуха = $(Уровень~осадков - 2.5)^3 \times 2^8 / 10$
-    \item Изменение влажности почвы = $(Уровень~осадков - 2.5)^5 / 10$
+    \item Изменение влажности воздуха = $(\text{Уровень~осадков} - 2.5)^3 \times 2^8 / 10$
+    \item Изменение влажности почвы = $(\text{Уровень~осадков} - 2.5)^5 / 10$
 \end{itemize}
 
-$F_{xeu \rightarrow yz}$ – функция отображения входа объекта управления в его выход. Функция отвечает за отображение параметров входа ОУ (векторов X, V, U) в его выходы:
+$F_{xeu \rightarrow yz}$ – \text{функция отображения входа объекта управления в его выход. Функция отвечает за отображение параметров входа ОУ (векторов X, V, U) в его выходы}:
 \begin{itemize}
-    \item Температура воздуха $(t+1)$ = температура воздуха $(t)$ + Изменение температуры воздуха $/ 2$
-    \item Влажность воздуха $(t+1)$ = влажность воздуха $(t)$ + Изменение влажности воздуха $/ 4$
-    \item Влажность почвы $(t+1)$ = влажность почвы $(t)$ + Изменение влажности почвы $/ 10$
-    \item Количество азота $(t+1)$ = количество азота $(t)$ + Изменение концентрации азота
-    \item Количество фосфора $(t+1)$ = количество фосфора $(t)$ + Изменение концентрации фосфора
-    \item Количество калия $(t+1)$ = количество калия $(t)$ + Изменение концентрации калия
+    \item \text{Температура воздуха} $(t+1)$ = \text{температура воздуха} $(t)$ + \text{Изменение температуры воздуха} $/ 2$
+    \item \text{Влажность воздуха} $(t+1)$ = \text{влажность воздуха} $(t)$ + \text{Изменение влажности воздуха} $/ 4$
+    \item \text{Влажность почвы} $(t+1)$ = \text{влажность почвы} $(t)$ + \text{Изменение влажности почвы} $/ 10$
+    \item \text{Количество азота} $(t+1)$ = \text{количество азота} $(t)$ + \text{Изменение концентрации азота}
+    \item \text{Количество фосфора} $(t+1)$ = \text{количество фосфора} $(t)$ + \text{Изменение концентрации фосфора}
+    \item \text{Количество калия} $(t+1)$ = \text{количество калия} $(t)$ + \text{Изменение концентрации калия}
     \item Уровень pH почвы $(t+1)$ = уровень pH почвы $(t)$ + Количество загрязняющих выбросов $/ 1000$
 \end{itemize}
 
@@ -224,7 +204,7 @@ $F_{xeu \rightarrow yz}$ – функция отображения входа о
 \hline
 Параметр & Критическое/Низкое & Неоптимальное/Среднее & Оптимальное/Высокое \\
 \hline
-Температура воздуха (\textdegree{}C) & $<$ 10 или $>$ 35 & 10-16, 26-35 & 16-26 \\
+Температура воздуха (\SI{}{\degree C}) & $<$ 10 или $>$ 35 & 10-16, 26-35 & 16-26 \\
 \hline
 Влажность воздуха (\%) & $<$ 40 или $>$ 80 & 40-50, 70-80 & 50-70 \\
 \hline
