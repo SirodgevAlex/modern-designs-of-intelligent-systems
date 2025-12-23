@@ -1,0 +1,28 @@
+<mxfile host="Electron" modified="2025-12-23T20:11:51.668Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="HaDM3-GP0fEmhCiW0sMs" version="24.1.0" type="device">
+  <diagram name="Страница — 1" id="ao0HPJ9LXY-MV_2V43vU">
+    <mxGraphModel dx="3293" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PkInUB7ko8_vYNQUe7um-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="PkInUB7ko8_vYNQUe7um-4" target="PkInUB7ko8_vYNQUe7um-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PkInUB7ko8_vYNQUe7um-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="PkInUB7ko8_vYNQUe7um-4" target="PkInUB7ko8_vYNQUe7um-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PkInUB7ko8_vYNQUe7um-4" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;Модель случайных&lt;/b&gt;&lt;/div&gt;&lt;b&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;возмущений (МСВ)&lt;/b&gt;&lt;/div&gt;&lt;/b&gt;&lt;hr&gt;— Осадки&lt;br&gt;— Загрязнения&lt;br&gt;— Температурные колебания" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=10;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="270" width="190" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="PkInUB7ko8_vYNQUe7um-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="PkInUB7ko8_vYNQUe7um-3" target="PkInUB7ko8_vYNQUe7um-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PkInUB7ko8_vYNQUe7um-2" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;Модель объекта&lt;/b&gt;&lt;/div&gt;&lt;b&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;управления (МОУ)&lt;/b&gt;&lt;/div&gt;&lt;/b&gt;&lt;hr&gt;— Состояние поля&lt;br&gt;— Состояние воздуха&lt;br&gt;— Состояние почвы&lt;br&gt;— Визуальные признаки" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=10;spacingTop=10;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="90" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="PkInUB7ko8_vYNQUe7um-3" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;Модель&lt;/b&gt;&lt;/div&gt;&lt;b&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;регулятора (МР)&lt;/b&gt;&lt;/div&gt;&lt;/b&gt;&lt;hr&gt;— Расчет влажн.&lt;br&gt;— Расчет темп.&lt;br&gt;— Расчет pH" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=10;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="250" y="90" width="120" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
