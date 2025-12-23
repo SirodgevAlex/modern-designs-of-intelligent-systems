@@ -30,108 +30,366 @@
 
 \subsection{Правила на языке представления знаний системы G2}
 
-\begin{lstlisting}[language=G2, breaklines=true, breakatwhitespace=true]
-when the value of leaf_spots_state as of 1 seconds ago = "yellow-green-angular" and
-the rate of change per second of leaf_spots_state during the last 2 seconds = 0 and
-the value of leaf_underside_coating as of 1 seconds ago = "gray-violet" and
-the rate of change per second of leaf_underside_coating during the last 2 seconds = 0 then
-conclude that the disease_diagnosis of every melon_plant = "peronosporosis"
-when the value of leaf_stem_coating as of 1 seconds ago = "white-powdery" and
-the rate of change per second of leaf_stem_coating during the last 3 seconds = 0 and
-the value of leaf_curl_state as of 1 seconds ago = "curled-brown" and
-the rate of change per second of leaf_curl_state during the last 2 seconds = 0 then
-conclude that the disease_diagnosis of every melon_plant = "powdery_mildew"
-when the value of leaf_spots_state as of 1 seconds ago = "yellow-brown-bordered" and
-the rate of change per second of leaf_spots_state during the last 2 seconds = 0 and
-the value of stem_lesions as of 1 seconds ago = "depressed-oval-yellow-brown" and
-the rate of change per second of stem_lesions during the last 2 seconds = 0 then
-conclude that the disease_diagnosis of every melon_plant = "anthracnose"
-when the value of plant_wilting as of 1 seconds ago = "wilted" and
-the rate of change per second of plant_wilting during the last 1 second = 0 and
-the value of leaf_yellowing_pattern as of 1 seconds ago = "base-to-top" and
-the rate of change per second of leaf_yellowing_pattern during the last 2 seconds = 0 and
-the value of root_collar_state as of 1 seconds ago = "darkened" and
-the rate of change per second of root_collar_state during the last 3 seconds = 0 then
-conclude that the disease_diagnosis of every melon_plant = "fusarium_wilt"
-when the value of lower_leaves_color as of 1 seconds ago = "pale-green" and
-the rate of change per second of lower_leaves_color during the last 3 seconds = 0 and
-the value of soil_nitrogen_state as of 1 seconds ago = 0 and
-the rate of change per second of soil_nitrogen_state during the last 2 seconds = 0 and
-the value of growth_rate as of 1 seconds ago = "slowed" and
-the rate of change per second of growth_rate during the last 4 seconds = 0 then
-conclude that the deficiency_diagnosis of every melon_plant = "nitrogen_deficiency"
-when the value of leaf_color_tone as of 1 seconds ago = "dark-green-purple" and
-the rate of change per second of leaf_color_tone during the last 3 seconds = 0 and
-the value of soil_phosphorus_state as of 1 seconds ago = 0 and
-the rate of change per second of soil_phosphorus_state during the last 2 seconds = 0 then
-conclude that the deficiency_diagnosis of every melon_plant = "phosphorus_deficiency"
-when the value of leaf_edge_state as of 1 seconds ago = "brown-burned" and
-the rate of change per second of leaf_edge_state during the last 2 seconds = 0 and
-the value of soil_potassium_state as of 1 seconds ago = 0 and
-the rate of change per second of soil_potassium_state during the last 2 seconds = 0 then
-conclude that the deficiency_diagnosis of every melon_plant = "potassium_deficiency"
-when the value of old_leaf_interveinal_chlorosis as of 1 seconds ago = "present" and
-the rate of change per second of old_leaf_interveinal_chlorosis during the last 2 seconds = 0 and
-the value of soil_magnesium_state as of 1 seconds ago = 1 and
-the rate of change per second of soil_magnesium_state during the last 3 seconds = 0 then
-conclude that the deficiency_diagnosis of every melon_plant = "magnesium_deficiency"
-when the value of young_leaf_interveinal_chlorosis as of 1 seconds ago = "present" and
-the rate of change per second of young_leaf_interveinal_chlorosis during the last 2 seconds = 0 and
-the value of soil_iron_state as of 1 seconds ago = 0 and
-the rate of change per second of soil_iron_state during the last 1 second = 0 then
-conclude that the deficiency_diagnosis of every melon_plant = "iron_deficiency"
-when the value of soil_nitrogen_state as of 1 seconds ago = 0 and
-the rate of change per second of soil_nitrogen_state during the last 2 seconds = 0 and
-the value of soil_humidity_state as of 1 seconds ago = 1 and
-the rate of change per second of soil_humidity_state during the last 3 seconds = 0 then
-conclude that the nutrition_state of every melon_field = "critical_with_leaching_risk"
-when the value of soil_nitrogen_state as of 1 seconds ago = 1 and
-the rate of change per second of soil_nitrogen_state during the last 3 seconds = 0 and
-the value of soil_potassium_state as of 1 seconds ago = 1 and
-the rate of change per second of soil_potassium_state during the last 3 seconds = 0 and
-the value of soil_phosphorus_state as of 1 seconds ago = 1 and
-the rate of change per second of soil_phosphorus_state during the last 3 seconds = 0 then
-conclude that the nutrition_state of every melon_field = "unstable"
-when the value of soil_nitrogen_state as of 1 seconds ago = 2 and
-the rate of change per second of soil_nitrogen_state during the last 4 seconds = 0 and
-the value of soil_potassium_state as of 1 seconds ago = 2 and
-the rate of change per second of soil_potassium_state during the last 4 seconds = 0 and
-the value of soil_phosphorus_state as of 1 seconds ago = 2 and
-the rate of change per second of soil_phosphorus_state during the last 4 seconds = 0 then
-conclude that the nutrition_state of every melon_field = "stable"
-when the disease_diagnosis of every melon_plant = "powdery_mildew" and
-the value of air_humidity_state as of 1 seconds ago = "high" and
-the rate of change per second of air_humidity_state during the last 3 seconds = 0 and
-the value of air_temperature_state as of 1 seconds ago = "moderate_16_20" and
-the rate of change per second of air_temperature_state during the last 3 seconds = 0 then
-conclude that the recommendation of display_object = "обработать посадки коллоидной серой, соблюдать севооборот"
-when the disease_diagnosis of every melon_plant = "peronosporosis" and
-the value of soil_humidity_state as of 1 seconds ago = 1 and
-the rate of change per second of soil_humidity_state during the last 2 seconds = 0 then
-conclude that the recommendation of display_object = "обработать бордоской жидкостью, прогреть семена при 45%C в течение 2 часов"
-when the disease_diagnosis of every melon_plant = "anthracnose" and
-the value of air_temperature_state as of 1 seconds ago = "high_24_25" and
-the rate of change per second of air_temperature_state during the last 3 seconds = 0 and
-the value of air_humidity_state as of 1 seconds ago = "above_60%" and
-the rate of change per second of air_humidity_state during the last 3 seconds = 0 then
-conclude that the recommendation of display_object = "удалить пораженные части растений, обработать фунгицидами"
-when the disease_diagnosis of every melon_plant = "fusarium_wilt" then
-conclude that the recommendation of display_object = "удалить пораженные растения, продезинфицировать почву, соблюдать севооборот минимум 4 года"
-when the deficiency_diagnosis of every melon_plant = "nitrogen_deficiency" and
-the value of nutrition_state as of 1 seconds ago = "unstable" and
-the rate of change per second of nutrition_state during the last 2 seconds = 0 then
-conclude that the recommendation of display_object = "внести азотные удобрения (мочевина, аммиачная селитра), провести листовую подкормку 2% раствором нитрата кальция"
-when the deficiency_diagnosis of every melon_plant = "potassium_deficiency" and
-the value of soil_potassium_state as of 1 seconds ago = 0 and
-the rate of change per second of soil_potassium_state during the last 2 seconds = 0 then
-conclude that the recommendation of display_object = "внести калийные удобрения, избегать избыточного азотного питания"
-when the deficiency_diagnosis of every melon_plant = "magnesium_deficiency", then
-conclude that the recommendation of display_object = "провести внекорневую подкормку сульфатом магния"
-when the deficiency_diagnosis of every melon_plant = "iron_deficiency" and
-the value of soil_pH_state as of 1 seconds ago = "above_7_5" and
-the rate of change per second of soil_pH_state during the last 3 seconds = 0 then
-conclude that the recommendation of display_object = "провести внекорневую подкормку хелатом железа, снизить pH почвы"
+\begin{lstlisting}[language=C, breaklines=true, breakatwhitespace=false]
+unconditionally start detect_magnesium_deficiency(leaf1, soil1, plant1)
+unconditionally start show_lights()
+unconditionally start show_lights_diagnoz(plant1, air1, soil1)
+unconditionally start constraints(air1, soil1, plant1)
+unconditionally start simulate_day(air1, soil1, plant1)
+initially start initialize_simulation()
+    
+for any soil soil1
+    when the soil_humidity_state of soil1 = 1
+    and the soil_potassium_state of soil1 >= 1
+    and the soil_nitrogen_state of soil1 >= 1
+    then conclude that the soil_state of soil1 = "satisfactory"
+
+for any soil soil1
+    when the soil_humidity_state of soil1 = 2
+    and the soil_potassium_state of soil1 = 2
+    and the soil_nitrogen_state of soil1 = 2
+    and the soil_magnesium_state of soil1 = 2
+    then conclude that the soil_state of soil1 = "excellent"
+
+for any soil soil1
+    when the soil_humidity_state of soil1 = 2
+    and the soil_magnesium_state of soil1 = 1
+    and the soil_nitrogen_state of soil1 = 2
+    then conclude that the soil_state of soil1 = "good"
+
+for any soil soil1
+    when the soil_humidity_state of soil1 = 2
+    and the soil_potassium_state of soil1 = 2
+    and the soil_nitrogen_state of soil1 = 1
+    then conclude that the soil_state of soil1 = "good"
+
+for any soil soil1
+    when the soil_humidity_state of soil1 = 0
+    and the soil_potassium_state of soil1 = 2
+    and the soil_nitrogen_state of soil1 = 2
+    then conclude that the soil_state of soil1 = "satisfactory"
+
+for any soil soil1
+    when the soil_humidity_state of soil1 = 2
+    and the soil_potassium_state of soil1 = 0
+    and the soil_nitrogen_state of soil1 = 0
+    and the soil_magnesium_state of soil1 = 0
+    then conclude that the soil_state of soil1 = "satisfactory"
+
+for any soil soil1
+    when the soil_humidity_state of soil1 = 2
+    and the soil_nitrogen_state of soil1 = 0
+    then conclude that the soil_state of soil1 = "unsatisfactory"
+
+for any soil soil1
+    when the soil_humidity_state of soil1 = 2
+    and the soil_magnesium_state of soil1 = 0
+    then conclude that the soil_state of soil1 = "unsatisfactory"
+
+for any soil soil1
+    when the soil_humidity_state of soil1 <= 1
+    and the soil_potassium_state of soil1 = 0
+    and the soil_nitrogen_state of soil1 = 0
+    and the soil_magnesium_state of soil1 = 0
+    then conclude that the soil_state of soil1 = "unsatisfactory"
+
+for any air air1
+    when the air_temperature_state of air1 = 0
+    and the air_humidity_state of air1 = 0
+    then conclude that the air_state of air1 = "critical"
+
+for any air air1
+    when the air_temperature_state of air1 = 1
+    and the air_humidity_state of air1 = 2
+    then conclude that the air_state of air1 = "friendly"
+
+for any air air1
+    when the air_temperature_state of air1 = 2
+    and the air_humidity_state of air1 = 2
+    then conclude that the air_state of air1 = "ultrafriendly"
+
+for any plant plant1 for any air air1
+    when the leaf_spots_state of plant1 = "yellow-green-angular"
+    and the leaf_underside_coating of plant1 = "gray-violet"
+    and the air_humidity_state of air1 > 80
+    and the air_temperature_state of air1 < 20
+    then conclude that the disease_diagnosis of plant1 = "peronosporosis"
+
+for any plant plant1 for any air air1
+    when the leaf_stem_coating of plant1 = "white-powdery"
+    and the leaf_curl_state of plant1 = "curled-brown"
+    and the air_humidity_state of air1 >= 50
+    and the air_temperature_state of air1 >= 15
+    and the air_temperature_state of air1 <= 25
+    then conclude that the disease_diagnosis of plant1 = "powdery_mildew"
+
+for any plant plant1 for any air air1
+    when the leaf_underside_coating of plant1 = "white"
+    and the air_humidity_state of air1 >= 50
+    and the air_temperature_state of air1 >= 15
+    and the air_temperature_state of air1 <= 25
+    then conclude that the disease_diagnosis of plant1 = "powdery_mildew"
+
+for any plant plant1 for any air air1
+    when the leaf_underside_coating of plant1 = "gray"
+    and the air_humidity_state of air1 > 80
+    and the air_temperature_state of air1 < 20
+    then conclude that the disease_diagnosis of plant1 = "downy_mildew"
+
+for any plant plant1 for any air air1
+    when the leaf_spots_state of plant1 = "yellow-brown-bordered"
+    and the stem_lesions of plant1 = "depressed-oval-yellow-brown"
+    and the air_temperature_state of air1 >= 20
+    and the air_humidity_state of air1 >= 80
+    then conclude that the disease_diagnosis of plant1 = "anthracnose"
+
+for any plant plant1 for any air air1
+    when the leaf_spots_state of plant1 = "extensive"
+    and the air_temperature_state of air1 >= 20
+    and the air_humidity_state of air1 >= 80
+    then conclude that the disease_diagnosis of plant1 = "anthracnose"
+
+for any plant plant1
+    when the plant_wilting of plant1 = "wilted"
+    and the leaf_yellowing_pattern of plant1 = "base-to-top"
+    and the root_collar_state of plant1 = "darkened"
+    then conclude that the disease_diagnosis of plant1 = "fusarium_wilt"
+
+for any plant plant1
+    when the plant_wilting of plant1 = "strong"
+    and the root_color_state of plant1 = "black"
+    then conclude that the disease_diagnosis of plant1 = "fusariosis"
+
+for any plant plant1 for any soil soil1
+    when the lower_leaves_color of plant1 = "pale-green"
+    and the soil_nitrogen_state of soil1 = 0
+    and the growth_rate of plant1 = "slowed"
+    then conclude that the deficiency_diagnosis of plant1 = "nitrogen_deficiency"
+
+for any plant plant1
+    when the leaf_yellowing_pattern of plant1 = "complete"
+    and the soil_nitrogen_state of plant1 < 50
+    then conclude that the deficiency_diagnosis of plant1 = "N"
+
+for any plant plant1 for any soil soil1
+    when the leaf_color_tone of plant1 = "dark-green-purple"
+    and the soil_phosphorus_state of soil1 = 0
+    then conclude that the deficiency_diagnosis of plant1 = "phosphorus_deficiency"
+
+for any plant plant1 for any soil soil1
+    when the leaf_edge_state of plant1 = "brown-burned"
+    and the soil_potassium_state of soil1 = 0
+    then conclude that the deficiency_diagnosis of plant1 = "potassium_deficiency"
+
+for any plant plant1 for any soil soil1
+    when the old_leaf_interveinal_chlorosis of plant1 = "present"
+    and the soil_magnesium_state of soil1 = 1
+    then conclude that the deficiency_diagnosis of plant1 = "magnesium_deficiency"
+
+for any plant plant1 for any soil soil1
+    when the old_leaf_interveinal_chlorosis of plant1 = "strong"
+    and the soil_magnesium_state of soil1 < 50
+    and the soil_ph_state of soil1 = "alkaline"
+    then conclude that the deficiency_diagnosis of plant1 = "Mg"
+
+for any plant plant1 for any soil soil1
+    when the young_leaf_interveinal_chlorosis of plant1 = "present"
+    and the soil_iron_state of soil1 = 0
+    then conclude that the deficiency_diagnosis of plant1 = "iron_deficiency"
+
+for any plant plant1 for any soil soil1
+    when the young_leaf_interveinal_chlorosis of plant1 = "strong"
+    and the soil_iron_state of soil1 < 10
+    and the soil_ph_state of soil1 = "alkaline"
+    then conclude that the deficiency_diagnosis of plant1 = "Fe"
+
+for any plant plant1 for any soil soil1
+    when the leaf_curl_state of plant1 = "strong_curl"
+    and the soil_magnesium_state of soil1 = 0
+    then conclude that the deficiency_diagnosis of plant1 = "magnesium_severe"
+
+for any plant plant1 for any soil soil1
+    when the leaf_vein_color of plant1 = "greenish"
+    and the soil_magnesium_state of soil1 = 1
+    then conclude that the deficiency_diagnosis of plant1 = "magnesium_mild"
+
+for any leaf leaf1 for any plant plant1
+    when the leaf_color of leaf1 = "green"
+    and the leaf_spots of leaf1 = "none"
+    then conclude that the leaf_state of leaf1 = "healthy"
+
+for any leaf leaf1 for any plant plant1
+    when the leaf_color of leaf1 = "yellow"
+    and the leaf_spots of leaf1 = "brown-circular"
+    then conclude that the leaf_state of leaf1 = "disease_suspected"
+
+for any leaf leaf1 for any plant plant1
+    when the leaf_texture of leaf1 = "powdery"
+    and the leaf_color of leaf1 = "white-coated"
+    then conclude that the leaf_state of leaf1 = "powdery_mildew_present"
+
+for any leaf leaf1 for any plant plant1
+    when the leaf_margin_state of leaf1 = "brown-necrotic"
+    and the leaf_texture of leaf1 = "brittle"
+    then conclude that the leaf_state of leaf1 = "severe_nutrient_deficiency"
+
+for any leaf leaf1 for any plant plant1
+    when the leaf_underside of leaf1 = "gray-coating"
+    and the leaf_color of leaf1 = "pale-yellow"
+    then conclude that the leaf_state of leaf1 = "downy_mildew_present"
+
+for any leaf leaf1 for any plant plant1
+    when the leaf_interveinal_area of leaf1 = "chlorotic"
+    and the leaf_veins of leaf1 = "green"
+    then conclude that the leaf_state of leaf1 = "micronutrient_deficiency"
+
+for any leaf leaf1 for any plant plant1
+    when the leaf_spots of leaf1 = "yellow-halo"
+    and the leaf_spots of leaf1 = "concentric-rings"
+    then conclude that the leaf_state of leaf1 = "anthracnose_present"
+
+for any leaf leaf1 for any plant plant1
+    when the leaf_wilting of leaf1 = "present"
+    and the leaf_color of leaf1 = "dark-brown"
+    then conclude that the leaf_state of leaf1 = "fusarium_suspected"
+
+for any leaf leaf1 for any plant plant1 for any air air1
+    when the leaf_moisture of leaf1 = "high"
+    and the air_humidity_state of air1 = "high"
+    and the leaf_texture of leaf1 = "soft"
+    then conclude that the leaf_state of leaf1 = "fungal_infection_risk"
+
+for any leaf leaf1
+    when the leaf_age of leaf1 = "old"
+    and the leaf_color of leaf1 = "pale"
+    then conclude that the leaf_state of leaf1 = "senescence_normal"
+
+for any plant plant1
+    when the plant_height of plant1 = "normal"
+    and the leaf_state of plant1 = "healthy"
+    and the stem_state of plant1 = "firm"
+    then conclude that the plant_state of plant1 = "vigorous"
+
+for any plant plant1
+    when the plant_height of plant1 = "stunted"
+    and the leaf_state of plant1 = "yellowing"
+    then conclude that the plant_state of plant1 = "nutrient_deficiency_present"
+
+for any plant plant1
+    when the plant_wilting of plant1 = "severe"
+    and the stem_state of plant1 = "soft"
+    and the root_color_state of plant1 = "black"
+    then conclude that the plant_state of plant1 = "root_disease_critical"
+
+for any plant plant1
+    when the disease_diagnosis of plant1 = "powdery_mildew"
+    and the leaf_state of plant1 = "powdery_mildew_present"
+    then conclude that the plant_state of plant1 = "diseased_fungal"
+
+for any plant plant1
+    when the disease_diagnosis of plant1 = "anthracnose"
+    and the leaf_spots of plant1 = "extensive"
+    then conclude that the plant_state of plant1 = "heavily_diseased"
+
+for any plant plant1 for any soil soil1
+    when the deficiency_diagnosis of plant1 = "nitrogen_deficiency"
+    and the soil_nitrogen_state of soil1 = 0
+    then conclude that the plant_state of plant1 = "nitrogen_starved"
+
+for any plant plant1 for any soil soil1
+    when the plant_height of plant1 = "normal"
+    and the leaf_state of plant1 = "healthy"
+    and the soil_state of soil1 = "excellent"
+    then conclude that the plant_state of plant1 = "optimal_growth"
+
+for any plant plant1
+    when the stem_state of plant1 = "lesions-present"
+    and the stem_color of plant1 = "brown-discolored"
+    then conclude that the plant_state of plant1 = "stem_disease_present"
+
+for any plant plant1
+    when the fruit_state of plant1 = "deformed"
+    and the disease_diagnosis of plant1 = "fusariosis"
+    then conclude that the plant_state of plant1 = "fruit_production_compromised"
+
+for any soil soil1
+    when the soil_nitrogen_state of soil1 = 0
+    and the soil_humidity_state of soil1 = 1
+    then conclude that the nutrition_state of soil1 = "critical_with_leaching_risk"
+
+for any soil soil1
+    when the soil_nitrogen_state of soil1 = 1
+    and the soil_potassium_state of soil1 = 1
+    and the soil_phosphorus_state of soil1 = 1
+    then conclude that the nutrition_state of soil1 = "unstable"
+
+for any soil soil1
+    when the soil_nitrogen_state of soil1 = 2
+    and the soil_potassium_state of soil1 = 2
+    and the soil_phosphorus_state of soil1 = 2
+    then conclude that the nutrition_state of soil1 = "stable"
+
+for any plant plant1 for any air air1 for any display_object display1
+    when the disease_diagnosis of plant1 = "powdery_mildew"
+    and the air_humidity_state of air1 = "high"
+    and the air_temperature_state of air1 = "moderate_16_20"
+    then conclude that the recommendation of display1 = "обработать посадки коллоидной серой, соблюдать севооборот"
+
+for any plant plant1 for any soil soil1 for any display_object display1
+    when the disease_diagnosis of plant1 = "peronosporosis"
+    and the soil_humidity_state of soil1 = 1
+    then conclude that the recommendation of display1 = "обработать бордоской жидкостью, прогреть семена при 45C в течение 2 часов"
+
+for any plant plant1 for any air air1 for any display_object display1
+    when the disease_diagnosis of plant1 = "anthracnose"
+    and the air_temperature_state of air1 = "high_24_25"
+    and the air_humidity_state of air1 = "above_60%"
+    then conclude that the recommendation of display1 = "удалить пораженные части растений, обработать фунгицидами"
+
+for any plant plant1 for any display_object display1
+    when the disease_diagnosis of plant1 = "fusarium_wilt"
+    then conclude that the recommendation of display1 = "удалить пораженные растения, продезинфицировать почву, соблюдать севооборот минимум 4 года"
+
+for any plant plant1 for any display_object display1
+    when the disease_diagnosis of plant1 = "fusariosis"
+    then conclude that the recommendation of display1 = "удалить пораженные растения, продезинфицировать почву, избегать избыточной влажности"
+
+for any plant plant1 for any display_object display1
+    when the disease_diagnosis of plant1 = "downy_mildew"
+    then conclude that the recommendation of display1 = "обработать медьсодержащими фунгицидами, улучшить вентиляцию, снизить влажность"
+
+for any plant plant1 for any soil soil1 for any display_object display1
+    when the deficiency_diagnosis of plant1 = "nitrogen_deficiency"
+    and the nutrition_state of soil1 = "unstable"
+    then conclude that the recommendation of display1 = "внести азотные удобрения (мочевина, аммиачная селитра), провести листовую подкормку 2% раствором нитрата кальция"
+
+for any plant plant1 for any soil soil1 for any display_object display1
+    when the deficiency_diagnosis of plant1 = "potassium_deficiency"
+    and the soil_potassium_state of soil1 = 0
+    then conclude that the recommendation of display1 = "внести калийные удобрения, избегать избыточного азотного питания"
+
+for any plant plant1 for any display_object display1
+    when the deficiency_diagnosis of plant1 = "magnesium_deficiency"
+    then conclude that the recommendation of display1 = "провести внекорневую подкормку сульфатом магния"
+
+for any plant plant1 for any display_object display1
+    when the deficiency_diagnosis of plant1 = "magnesium_severe"
+    then conclude that the recommendation of display1 = "срочная внекорневая подкормка сульфатом магния 10% раствором"
+
+for any plant plant1 for any display_object display1
+    when the deficiency_diagnosis of plant1 = "magnesium_mild"
+    then conclude that the recommendation of display1 = "внекорневая подкормка сульфатом магния 5% раствором, внесение органических удобрений"
+
+for any plant plant1 for any soil soil1 for any display_object display1
+    when the deficiency_diagnosis of plant1 = "iron_deficiency"
+    and the soil_ph_state of soil1 = "above_7_5"
+    then conclude that the recommendation of display1 = "провести внекорневую подкормку хелатом железа, снизить pH почвы"
+
+for any plant plant1 for any soil soil1 for any display_object display1
+    when the deficiency_diagnosis of plant1 = "phosphorus_deficiency"
+    then conclude that the recommendation of display1 = "внести фосфорные удобрения, улучшить усвояемость путем внесения органических удобрений"
 \end{lstlisting}
+    
 
 \section{Построение имитационной модели, используемой в прототипе ИЭС}
 
@@ -220,11 +478,11 @@ pH почвы & $< \num{6.0}$ или $> \num{7.5}$ & \num{6.0}--\num{6.2}, \num{
 
 В рамках данной работы было принято решение о необходимости проведения следующих имитационных экспериментов:
 \begin{itemize}
-    \item \textbf{ЭКСПЕРИМЕНТ \num{1}:} Моделирование нестабильного содержания азота в почве при различных уровнях осадков и анализ развития визуальных признаков азотного голодания.
-    \item \textbf{ЭКСПЕРИМЕНТ \num{2}:} Моделирование одновременного дефицита нескольких макроэлементов (NPK) и оценка комплексного влияния на состояние растений дынь.
-    \item \textbf{ЭКСПЕРИМЕНТ \num{3}:} Моделирование благоприятных условий для развития грибковых заболеваний (мучнистая роса, пероноспороз, антракноз) при различных комбинациях температуры и влажности.
-    \item \textbf{ЭКСПЕРИМЕНТ \num{4}:} Моделирование влияния внешних загрязнений на изменение pH почвы и последующее развитие дефицита микроэлементов (железа, магния).
-    \item \textbf{ЭКСПЕРИМЕНТ \num{5}:} Моделирование вымывания питательных веществ при избыточных осадках и анализ динамики перехода от стабильного к критическому состоянию питания.
+    \item \textbf{Эксперимент \num{1}:} Моделирование нестабильного содержания азота в почве при различных уровнях осадков и анализ развития визуальных признаков азотного голодания.
+    \item \textbf{Эксперимент \num{2}:} Моделирование одновременного дефицита нескольких макроэлементов (NPK) и оценка комплексного влияния на состояние растений дынь.
+    \item \textbf{Эксперимент \num{3}:} Моделирование благоприятных условий для развития грибковых заболеваний (мучнистая роса, пероноспороз, антракноз) при различных комбинациях температуры и влажности.
+    \item \textbf{Эксперимент \num{4}:} Моделирование влияния внешних загрязнений на изменение pH почвы и последующее развитие дефицита микроэлементов (железа, магния).
+    \item \textbf{Эксперимент \num{5}:} Моделирование вымывания питательных веществ при избыточных осадках и анализ динамики перехода от стабильного к критическому состоянию питания.
 \end{itemize}
 
 Каждый эксперимент предполагает:
