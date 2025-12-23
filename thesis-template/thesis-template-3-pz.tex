@@ -4,7 +4,15 @@
 
 \documentclass[12pt,a4paper,oneside,final]{report}
 
-\\usepackage{listings}\n\\lstdefinelanguage{G2}{\n  keywords={when,the,value,of,as,of,seconds,ago,rate,of,change,per,second,during,the,last,second,seconds,then,conclude,that,disease_diagnosis,deficiency_diagnosis,nutrition_state,recommendation,every,melon_plant,melon_field,display_object},\n  literate={\\textquotedblleft}{\"}{1}\n           {\\textquotedblright}{\"}{1},\n  morestring=[b]\",\n  comment=[l]\%\n}\n\\usepackage{polyglossia}
+\usepackage{listings}
+\lstdefinelanguage{G2}{
+  keywords={when,the,value,of,as,of,seconds,ago,rate,of,change,per,second,during,the,last,second,seconds,then,conclude,that,disease_diagnosis,deficiency_diagnosis,nutrition_state,recommendation,every,melon_plant,melon_field,display_object},
+  literate={\textquotedblleft}{"}1
+           {\textquotedblright}{"}1,
+  morestring=[b]",
+  comment=[l]%
+}
+\usepackage{polyglossia}
 \setmainlanguage{russian}
 \usepackage{siunitx}
 \sisetup{detect-all, locale = US} % Добавляем сиюниткс и устанавливаем локаль для правильного вывода градусов
