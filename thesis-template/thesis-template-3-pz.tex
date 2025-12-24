@@ -15,7 +15,12 @@
 \usepackage{polyglossia}
 \setmainlanguage{russian}
 \usepackage{siunitx}
-\sisetup{detect-all, locale = US} % Добавляем сиюниткс и устанавливаем локаль для правильного вывода градусов
+\sisetup{
+  detect-all,
+  locale = DE, % DE использует запятую как десятичный разделитель, что ближе к RU
+  range-phrase = {--},
+  range-units = single
+}
 \usepackage{float}
 
 \input{chapters/thesis-template-macro.tex}
