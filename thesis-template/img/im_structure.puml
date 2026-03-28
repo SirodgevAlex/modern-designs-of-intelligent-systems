@@ -1,0 +1,24 @@
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam defaultFontName "Times New Roman"
+skinparam defaultFontSize 12
+
+package "Имитационная модель" {
+    [Модель объекта управления (МОУ)] as mou
+    [Модель регулятора (МР)] as mr
+    [Модель случайных возмущений (МСВ)] as msv
+    [Интерфейс с ИЭС (Вектор Z(T))] as ies
+}
+
+mr -right-> mou : U(T)
+msv -down-> mou : E(T)
+mou -right-> ies : Z(T)
+mou -left-> mr : Y(T)
+
+note bottom of mou
+  Вектор X(T) — внешние входы
+end note
+@enduml
+

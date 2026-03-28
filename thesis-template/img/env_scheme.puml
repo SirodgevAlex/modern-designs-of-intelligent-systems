@@ -1,0 +1,20 @@
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam defaultFontName "Times New Roman"
+skinparam defaultFontSize 12
+
+package "Глобальная внешняя среда" {
+    [Внешняя среда (Климат, Почва)] as env
+    [Объект управления (Растения дыни)] as field
+    [Сеть датчиков и Визуальный контроль] as sensors
+    [Специалист (Агроном)] as agronomist
+}
+
+env -down-> field : Воздействия
+field .right.> sensors : Параметры
+sensors -down-> agronomist : Данные для ИЭС
+agronomist -up-> field : Управление
+@enduml
+
